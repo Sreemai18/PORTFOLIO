@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sreemai Annam — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Sreemai<em>.</em></div>
+  <ul class="nav-links">
+    <li><a href="#profile">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- SIDEBAR + SCRIM -->
+<div class="scrim" id="scrim" onclick="closeMenu()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#profile"  onclick="closeMenu()">About</a>
+  <a href="#skills"   onclick="closeMenu()">Skills</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#contact"  onclick="closeMenu()">Contact</a>
+  <p class="mobile-footer">Sreemai Annam &copy; 2025</p>
+</div>
+
+<!-- HERO -->
+<section id="profile">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Hello, I'm</p>
+    <h1 class="hero-name">Sreemai<br><em>Annam</em></h1>
+    <p class="hero-role">B.Tech &nbsp;·&nbsp; CSE &nbsp;·&nbsp; SR University</p>
+    <p class="hero-bio">
+      A dedicated and passionate Bachelor of Technology student specializing in Computer Science and Engineering at SR University. With a strong academic foundation and a deep interest in machine learning, data science, and full-stack development, I am continuously exploring innovative solutions to real-world problems.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-fill" onclick="window.open('./assets/doc/SREEMAI_ANNAM_RESUME.pdf')">Download CV</button>
+      <button class="btn-outline" onclick="location.href='#contact'">Let's Connect</button>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/sreemai-annam-96bb94293/" target="_blank" rel="noopener" class="soc-link">
+        <img src="./assets/images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/Sreemai18" target="_blank" rel="noopener" class="soc-link">
+        <img src="./assets/images/github.png" alt="GitHub">
+      </a>
+      <a href="https://www.credly.com/users/annam-sreemai" target="_blank" rel="noopener" class="soc-link soc-credly">
+  <img src="./assets/images/credly.png" alt="Credly">
+</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <img src="./assets/images/profile-pic.jpg" alt="Sreemai Annam">
+    <!-- <div class="chip chip-1"><strong>0.964</strong><span>R² Score</span></div>
+    <div class="chip chip-2"><strong>3+</strong><span>Projects</span></div> -->
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-wrap">
+    <p class="sec-label reveal">What I know</p>
+    <h2 class="sec-title reveal">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon"><h3>C</h3></div>
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon"><h3>Python</h3></div>
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon"><h3>Java</h3></div>
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon"><h3>HTML</h3></div>
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon"><h3>CSS</h3></div>
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon"><h3>JavaScript</h3></div>
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle SQL" class="skill-icon"><h3>Oracle SQL</h3></div>
+      <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-icon"><h3>MongoDB</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-wrap">
+    <p class="sec-label reveal">What I've built</p>
+    <h2 class="sec-title reveal">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-img-wrap">
+          <img src="./assets/images/global food inflation.png" alt="Global Food Inflation" class="proj-img">
+          <span class="proj-num">01</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Global Food Inflation Analysis</h3>
+          <p class="proj-desc">ML pipeline using Logistic Regression, KNN, SVM, Random Forest & XGBoost to predict inflation patterns. Hyperparameter tuning achieved an R² of 0.964.</p>
+          <div class="proj-tags">
+            <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Data Science</span>
+          </div>
+          <a href="https://github.com/Sreemai18/Global-Food-Inflation" target="_blank" rel="noopener" class="proj-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-img-wrap">
+          <img src="./assets/images/HRIDAYAM.png" alt="HRIDAYAM" class="proj-img">
+          <span class="proj-num">02</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">HRIDAYAM</h3>
+          <p class="proj-desc">AI-powered mental well-being web app (Flask + Python) using CBT techniques, featuring an AI therapist chatbot powered by HuggingFace.</p>
+          <div class="proj-tags">
+            <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">HuggingFace</span><span class="tag">AI/ML</span>
+          </div>
+          <a href="https://github.com/Sreemai18/HRIDAYAM" target="_blank" rel="noopener" class="proj-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-img-wrap">
+          <img src="./assets/images/fitness tracker application.png" alt="Fitness Tracker" class="proj-img">
+          <span class="proj-num">03</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Fitness Tracker App</h3>
+          <p class="proj-desc">Full-featured fitness app with BMI calculator, workout progress tracking, exercise logging, and personalised diet recommendations.</p>
+          <div class="proj-tags">
+            <span class="tag">Full-Stack</span><span class="tag">JavaScript</span><span class="tag">Health Tech</span>
+          </div>
+          <a href="https://github.com/Sreemai18/Fitness-Tracker" target="_blank" rel="noopener" class="proj-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="proj-card reveal">
+  <div class="proj-img-wrap">
+    <img src="./assets/images/Headache Prediction Based on Lifestyle and Occupation.png" alt="Headache Prediction" class="proj-img">
+    <span class="proj-num">04</span>
+  </div>
+  <div class="proj-body">
+    <h3 class="proj-title">Headache Prediction Based on Lifestyle & Occupation</h3>
+    <p class="proj-desc">
+      Designed a ML framework to predict headache risks using lifestyle factors such as
+      sleep duration, stress levels, and occupation. Implemented RNN, KNN, SVM, and GBM algorithms.
+    </p>
+    <div class="proj-tags">
+      <span class="tag">Python</span>
+      <span class="tag">RNN</span>
+      <span class="tag">SVM</span>
+      <span class="tag">GBM</span>
+      <span class="tag">ML</span>
+    </div>
+    <a href="https://github.com/Sreemai18/Headache-Prediction" target="_blank" rel="noopener" class="proj-link">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <p class="sec-label reveal">Get in touch</p>
+    <h2 class="sec-title reveal">Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <div class="c-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email</h3>
+        <p>annamsreemai@gmail.com</p>
+        <a href="mailto:annamsreemai@gmail.com" class="contact-link">Send a message →</a>
+      </div>
+      <div class="contact-card reveal">
+        <div class="c-icon"><i class="fab fa-linkedin"></i></div>
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/sreemai-annam-96bb94293/" target="_blank" rel="noopener" class="contact-link">View Profile →</a>
+      </div>
+      <div class="contact-card reveal">
+        <div class="c-icon"><i class="fab fa-github"></i></div>
+        <h3>GitHub</h3>
+        <a href="https://github.com/Sreemai18?tab=repositories" target="_blank" rel="noopener" class="contact-link">View Repositories →</a>
+      </div>
+      <div class="contact-card reveal">
+        <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Location</h3>
+        <p>Warangal, Telangana</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed &amp; built by <strong>Sreemai Annam</strong> &nbsp;·&nbsp; 2025</p>
+</footer>
+
+<script>
+  const btn   = document.getElementById('menuBtn');
+  const menu  = document.getElementById('mobileMenu');
+  const scrim = document.getElementById('scrim');
+
+  function openMenu() {
+    btn.classList.add('open');
+    menu.classList.add('open');
+    scrim.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    scrim.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  btn.addEventListener('click', () => menu.classList.contains('open') ? closeMenu() : openMenu());
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('in'), i * 70);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
